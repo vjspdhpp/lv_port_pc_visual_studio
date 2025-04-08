@@ -5,6 +5,7 @@
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
 #include "lvgl/demos/lv_demos.h"
+#include "Application.h"
 
 int WINAPI wWinMain(
     _In_ HINSTANCE hInstance,
@@ -74,8 +75,10 @@ int WINAPI wWinMain(
         return -1;
     }
 
-    ::lv_demo_widgets();
+    //::lv_demo_widgets();
     //::lv_demo_benchmark();
+    Application& app = Application::instance();
+    app.init();
 
     while (1)
     {

@@ -642,7 +642,13 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview_private.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win_private.h" />
+    <ClInclude Include="Application.h" />
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="MainPage.h" />
+    <ClInclude Include="Navigator.h" />
+    <ClInclude Include="OptionsPage.h" />
+    <ClInclude Include="PageBase.h" />
+    <ClInclude Include="PageManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\.devcontainer\devcontainer.json" />
@@ -7125,7 +7131,12 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
+    <ClCompile Include="Application.cpp" />
     <ClCompile Include="LvglWindowsDesktopApplication.cpp" />
+    <ClCompile Include="MainPage.cpp" />
+    <ClCompile Include="OptionsPage.cpp" />
+    <ClCompile Include="PageBase.cpp" />
+    <ClCompile Include="PageManager.cpp" />
   </ItemGroup>
   <Import Sdk="Mile.Project.Configurations" Version="1.0.1426" Project="Mile.Project.Cpp.targets" />
 </Project>

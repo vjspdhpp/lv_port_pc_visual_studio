@@ -1823,6 +1823,12 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="PageBase.h" />
+    <ClInclude Include="PageManager.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="MainPage.h" />
+    <ClInclude Include="OptionsPage.h" />
+    <ClInclude Include="Navigator.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="lvgl">
@@ -11266,7 +11272,13 @@
       <Filter>lvgl\zephyr</Filter>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ClCompile Include="PageBase.cpp" />
+    <ClCompile Include="PageManager.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="MainPage.cpp" />
+    <ClCompile Include="OptionsPage.cpp" />
+  </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsDesktopApplication.manifest" />
   </ItemGroup>
